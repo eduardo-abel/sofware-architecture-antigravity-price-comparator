@@ -1,0 +1,120 @@
+{
+    "Consoles": [
+        {
+            "monitor_id": "ps5_slim_disc",
+            "monitor_hash": "c1d604fdc2d66304d3524dceae36cb8d",
+            "title": "Sony PlayStation 5 Slim Digital Console 825GB - International Version",
+            "price": "R$ 3999,90",
+            "url": "https://www.amazon.com.br/Sony-PlayStation-Digital-Console-825GB/dp/B0FTRYCKT1/ref=sr_1_10?dib=eyJ2IjoiMSJ9._FCLhj9XU-hEdG3fD-U35IaBRM_Is1Hd6iLt3JAEJZBPJcG27PGHrCeFaHZkQNMhVEVqEUaZqaBl8eRxRY3CjkKw11K5AWCT9yh02uEc8wzvBALmKdizUlFly2vGlkC2gsO7hWY1XPg7nZhef4_9R-1IiMOOYNuxrFUo3_Uo2kh6EP3_suw7xdAe23FY3MT71rmVEBxj9OLvlGo4aHjlLxsrMCQvh06tUuDUo4hjmVkMTpZSY8YWk7zOO9AQpoM72o1uRNt8vIUzIdweX-1VDrhlsDoqtqJSgeyl2J8oEuM.t6S-Z2h91OVFf1p5xU8H11M1G-fA8EIb6DzRN4JoJ8g&dib_tag=se&keywords=Console+PlayStation+5+Slim&qid=1776903487&sr=8-10&ufe=app_do%3Aamzn1.fos.95de73c3-5dda-43a7-bd1f-63af03b14751",
+            "image": "https://m.media-amazon.com/images/I/516yiK6U+FL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:10.241622"
+        },
+        {
+            "monitor_id": "ps5_pro",
+            "monitor_hash": "c0efc247036ef5dffa73af2a0cbec92f",
+            "title": "Console PlayStation®5 Pro",
+            "price": "R$ 7490,00",
+            "url": "https://www.amazon.com.br/PlayStation-1000046552-Console-PlayStation%C2%AE5-Pro/dp/B0DH8J5YGH/ref=sr_1_2?dib=eyJ2IjoiMSJ9.DDmk2G8ucFk6inRZevJSCezcB-6i5axmotXAqyAhY5_F5lagN4RUAqDjt3TxylpCBjDlIlj5Howyly7hB6-vxk9_G1KeUq7nOO6urftwlB7tc-PejZL65eduddHf6GZsA2yN2kyh6sz-I8-hm3IRGGXhVFMkpFnREYosUi4b8WFsmC9xqFFUs5zf1m1OOCY-tyt4am9Z7yklAhiHbaloL2Et22XSpoUWhaFLayijABTdQe-lRXWZQBxcUqDXqSlHcsYxfOtX4a_eqANFI6hYK6qYShcPkM-Mbd0LcXkQkV8.ujoM93wVUBD6df-1UFdo8HS_rSoL6yR2QWHylUH9xbQ&dib_tag=se&keywords=Console+PlayStation+5+Pro&qid=1776903492&sr=8-2&ufe=app_do%3Aamzn1.fos.95de73c3-5dda-43a7-bd1f-63af03b14751",
+            "image": "https://m.media-amazon.com/images/I/51dfg52K-cL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:15.175486"
+        },
+        {
+            "monitor_id": "xbox_series_s",
+            "monitor_hash": "43f64105913f9fd20af84d8ff48e2967",
+            "title": "Microsoft Console digital Xbox Series S (sem disco, jogos) 512 GB - U Deal",
+            "price": "R$ 3430,00",
+            "url": "https://www.amazon.com.br/Microsoft-Console-digital-disco-jogos/dp/B09WW3TG58/ref=sr_1_5?dib=eyJ2IjoiMSJ9.PBAOgHHCUZBYCFfx0tFaD9QFwKc-gH9wPRU1hYSet3VWMm2wtW-xgoLT7WuU8SPlwmnpop7fM-j1oTCEhMBsYfIBX55ldy4HRzJnBW491RfuafjCE0zduIxziL5WZWvyMt-YlyiYfCI0pmv_a_kaVtyB9NpgvkzTGiI4AoXiczeJhXvpmk0IU9J8wXScLXusFksc5fwCnb2AIuZnOBPgm4mb4ZYmO6zG01wLc4GADPzWdcqgVZBVty1NKS1P6cIj5fQTIuLJGX0SFFPs3sLK3cOZPe3XXWcfSEuXwbNL9dU.bGH93j6p4wmGewbGYmjdrc5j2xgvb9_egUmVDyGJmo8&dib_tag=se&keywords=Microsoft+Xbox+Series+S&qid=1776903497&sr=8-5&ufe=app_do%3Aamzn1.fos.95de73c3-5dda-43a7-bd1f-63af03b14751",
+            "image": "https://m.media-amazon.com/images/I/61UgLcb2cpL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:19.494452"
+        },
+        {
+            "monitor_id": "nintendo_switch_oled",
+            "monitor_hash": "a3f4a67c07a2b40e3fed6ca63eb4567d",
+            "title": "Console Nintendo Switch OLED - Branco",
+            "price": "R$ 2590,00",
+            "url": "https://www.amazon.com.br/Console-Nintendo-Switch-OLED-Branco/dp/B098RJXBTY/ref=sr_1_10?dib=eyJ2IjoiMSJ9.T6lQPdxQ18BdyvsHb3twjm6lHiaH6D8DUz0iozUkqeHbzrhkaMBFkTaZKNSMxNMafnutnq_e3FP0hKIUMdjrkQ42QejkDPC757ZAwyplGtMXHwAex4A_jDQwhp1MWzkpy6qLlntc709Bq65-kdsf84i8REoaJXS9-dNnADUft4_BCfsmmch9Guh9YsGe04suuuPLu6DGD_UTdBN3dflbnYF_-N3hbyLVBafxVj5QEFd_0KvwdtuuLRu6xZs4qn8XcAmoP_lfbc97L9_KlHTWOFg02mHmuMZgdxKE-U28Su0.L3q_Gn9_hVt8bGfCL3t1YU2bqqk4CAoUE7bbVmDhmLs&dib_tag=se&keywords=Nintendo+Switch+OLED&qid=1776903501&sr=8-10&ufe=app_do%3Aamzn1.fos.95de73c3-5dda-43a7-bd1f-63af03b14751",
+            "image": "https://m.media-amazon.com/images/I/71eVf1+jn6L._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:26.264994"
+        }
+    ],
+    "Controles": [
+        {
+            "monitor_id": "dualsense_edge",
+            "monitor_hash": "53fa32381d80ab775ab37fabf6a757e7",
+            "title": "Controle sem fio DualSense Edge™",
+            "price": "R$ 1149,00",
+            "url": "https://www.amazon.com.br/Controle-sem-fio-DualSense-EdgeTM/dp/B0BMB8R1K6/ref=sr_1_5?dib=eyJ2IjoiMSJ9.0CJJt0a-6dr3Un_-KKw3zbmdlqZBGt0ibBmeoxE1DlfMQSbKMtffudNtJDJDFKHwrlD6f0GL5oVOauTebfr2OLJV4TjgkX7l03uY89cXswr_If8X3Xfwd7OW_Gpy3McTYSzj73e7Cepe9UQ2JvwgUqzGWMrXf6loNYMRLVxvZSD25uxrmMbJvcuIvPQzaXblaa6Tpt2PE57Wn09iwH-LzGRlMFPhRqd488eq5AMuUMo8exifrO8RXX3dHZ9nb8sciA8qAhpPinbcz67t9_yDy4PU_lD8qqhwLZan7YyDa-A.AlkGem3vogrOJ0ZFH1kSmH5JrS9HpW0AxQUnNI48CsM&dib_tag=se&keywords=Controle+DualSense+Edge+PS5&qid=1776903508&sr=8-5&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
+            "image": "https://m.media-amazon.com/images/I/51qo0klju-L._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:31.806270"
+        },
+        {
+            "monitor_id": "joycon_pair",
+            "monitor_hash": "b8cccc87058cf7741def4ea6b84a6460",
+            "title": "Nintendo, Controle Nintendo Switch, Joy-Con Roxo e Verde, Tons Pastéis",
+            "price": "R$ 599,99",
+            "url": "https://www.amazon.com.br/Nintendo-Controle-Switch-Verde-Past%C3%A9is/dp/B0CVQXWTPZ/ref=sr_1_13?dib=eyJ2IjoiMSJ9.jvbWhqPYDunNMGGhLTMJqImTVGzmxTeeVmAf1Kwh0XZGV-KULW1pD9uYuHwhRhfFgM-W3Xm7g_3JnYPhjbI6fevMNn_Yt6D3ozVj8lOqJdO5Bbt83Lwu9CXDrD8lAzPXIdxV7ek4p99T9EfbqLaM2GVestRKSnKbv3Xjg6__jM-YOn1Ctyo34NqHRy-rIlHVZbpCYrUHkONhL8FLgiKv-FVjWqr1SkapRxwxJez_5sRkjHx2VBX9zK2aNcDQ8DflD2iz5519Pf0Mx6u6WrFxz8BFEpBa0X2PgjCrfRxDyac.hCGBFlB3gy4IboMYM7USql1YINYdDp2nNKWq4HWxtBU&dib_tag=se&keywords=Controle+Joy-Con+Nintendo+Switch&qid=1776903513&sr=8-13&ufe=app_do%3Aamzn1.fos.cede3968-0a01-4da7-b7fa-174ca17dae70",
+            "image": "https://m.media-amazon.com/images/I/51xiP+RTV9L._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:36.225349"
+        }
+    ],
+    "Jogos": [
+        {
+            "monitor_id": "zelda_breath_wild",
+            "monitor_hash": "cf7df209ca8cce061314bfd914477b7b",
+            "title": "PDP REMATCH Enhanced Wired Nintendo Switch Pro Controller, Switch Lite/OLED Compatible - The Legend of Zelda: Breath of the Wild (Calamity Ganon)",
+            "price": "R$ 220,30",
+            "url": "https://www.amazon.com.br/PDP-Enhanced-Nintendo-Controller-Compatible/dp/B0BDFCT7R1/ref=sr_1_48?dib=eyJ2IjoiMSJ9.VZ-XD2dcwW_sk0uIEg018K2vMPOkqpdBTA1SbjD4StbtBBKVrLcij-qUqY3hk0tB9lCQ1a0t3SmCGCCDIuk1mOTr5CMf6F1oyVw3uF8BYAS46U8_FfGwWTAdwsiveyfka9nLewdMhq_lozX2H5yjtmYPFIQdUii3K1eTJVHt9nKaiTpgiZar8RyOa9aIH8pb5dm156QgGsHMLVpAghNBwWob9QJDbBGSmUieV1s8Bho64vZockGgrzFVKQnL8UvNOdz8txUiutQzz41EG78JkcpHKca8m5_l73-hdwVBeqA.F1SvtXtHpeFyCBZsw1_bUj6kSfQde1CrXbgyFDG_wh4&dib_tag=se&keywords=The+Legend+of+Zelda%3A+Breath+of+the+Wild+-+Nintendo+Switch&qid=1776903518&sr=8-48&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678",
+            "image": "https://m.media-amazon.com/images/I/61VZS9jwqkL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:41.498384"
+        },
+        {
+            "monitor_id": "mario_kart_8",
+            "monitor_hash": "aa6a83ceb63e5340c4cfadc997be4947",
+            "title": "Mario Kart 8 Deluxe - Nintendo Switch",
+            "price": "R$ 299,00",
+            "url": "https://www.amazon.com.br/Mario-Kart-Deluxe-Nintendo-Switch/dp/B0BK2RYTYH/ref=sr_1_5?dib=eyJ2IjoiMSJ9.GeEExWmNrFZxjlu-uYEYhum-eiSTqV7okby8ufeTJMp6M5KsANPONqrrvo4kZIe0LhyxOyq5gynkhQt8wgZ_JVhcneoGwxDp-zUXTPqWS9M6P2Tnrij7dNLb-vcHqHg5yHM-YTJenmn2dtADa9asWM65xg3vwAGY6IKU03BpoD2XOzg3ki8tP1BL1aajzDKOIBb2vYFKpCQ4S0PMbPVDdFnLO623LrjygS_APrgs2YMp6zzTbiWCr30bIJeBgA1v0lYP3Jt0cL0jOwKPxqEQ_EOHTV422go8hXmWZeOCGKc.motBAWL8jPKuuoZGfNG-MFUROSbVllofQPh9lMW7MTs&dib_tag=se&keywords=Mario+Kart+8+Deluxe+-+Nintendo+Switch&qid=1776903523&sr=8-5&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678",
+            "image": "https://m.media-amazon.com/images/I/61UFnW4XewL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:46.385497"
+        },
+        {
+            "monitor_id": "elden_ring_ps5",
+            "monitor_hash": "9522a692e8531b91b150aa15064b96cf",
+            "title": "Elden Ring NightReign - Deluxe Edition - PlayStation 5",
+            "price": "R$ 248,94",
+            "url": "https://www.amazon.com.br/Elden-Ring-NightReign-Deluxe-PlayStation/dp/B0F5D7QS95/ref=sr_1_2?dib=eyJ2IjoiMSJ9.fmTAi9E_2Q8uLQ-FW4YRJlUW2gUlukSf5Q4Wmws_1ohguZkshM1NEUkoQobmtbVx6Wzhs6aMeB5alyQqOLKdw-TTz6qkVfk5BPLZoP7_u7Rf-mVb8vfMrNtUqfU1s5NeFS-od3UmBOx7dOuhaWoMYUbSxGaYWPnCajFSRf5VlztI-iEAotRBoTiXOBrTH7UKO1wA28FWbxHiPY6uSVPfsA.0pdYipVM9d6sf0xRRh349M1_yJAlAVDloQV-AkS3w1A&dib_tag=se&keywords=Elden+Ring+PlayStation+5&qid=1776903528&sr=8-2&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678",
+            "image": "https://m.media-amazon.com/images/I/61rJCcVwyHL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:49.887545"
+        },
+        {
+            "monitor_id": "gta_vi_ps5",
+            "monitor_hash": "6b1e5cbf1842552d97acd699752b37ee",
+            "title": "Grand Theft AUTO V Limited ED (Acessórios de Videogame)",
+            "price": "R$ 2281,95",
+            "url": "https://www.amazon.com.br/Grand-Theft-Limited-acess%C3%B3rios-videogame/dp/B00GKL8Y8S/ref=sr_1_1?dib=eyJ2IjoiMSJ9.drYYD3B0JzBRLHkQdn0icxrne2oBnEEH67NIPvBu2ybtgNIaoNhdUgWxX7AFop4d.INvcf632j2l_OyNyJbH6-zgmjkKUQy6sTlcQCeaHIqI&dib_tag=se&keywords=Grand+Theft+Auto+VI+PlayStation+5&qid=1776903532&sr=8-1&ufe=app_do%3Aamzn1.fos.95de73c3-5dda-43a7-bd1f-63af03b14751",
+            "image": "https://m.media-amazon.com/images/I/31MptiLKtuL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:53.041192"
+        }
+    ],
+    "Acessórios & Hardware": [
+        {
+            "monitor_id": "kinect_xbox_one",
+            "monitor_hash": "ebe7cb7e71f7058fa3e99f433b419103",
+            "title": "Kinect Sensor Para Xbox One Microsoft",
+            "price": "R$ 1129,80",
+            "url": "https://www.amazon.com.br/Kinect-Sensor-Para-Xbox-Microsoft/dp/B00INAX3Q2/ref=sr_1_1?dib=eyJ2IjoiMSJ9.o8CpK1CZJ41zAeJAxnwhPCohyFzxgxQMVYWuGdljYg5-DccbmxExQjURlnVsW0B_bqx4R0loOhI-OVM5kxd0ViPWSVAVXPEizm878AKqTgRhKoK4cOWcgIC_rqOb05gHe2DFsCkWM3oIjiwk1C5GLkRkHqv_CDNZ7g4H5KBh7ozfb-GldM5O_KnhcZs1xP87.e_e7ye-j9_-AjTn4gx58esg6gcD91sOVqxiS7dRUjYg&dib_tag=se&keywords=Sensor+Kinect+Xbox+One&qid=1776903535&sr=8-1&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
+            "image": "https://m.media-amazon.com/images/I/51Bu09qKXwL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:18:56.477031"
+        }
+    ],
+    "Volantes": [
+        {
+            "monitor_id": "volante_g29",
+            "monitor_hash": "e0fd0f37ac46601ed7bc40781e5babb8",
+            "title": "Volante e Pedais Logitech G29 Driving Force com Force Feedback para PS5, PS4, PS3 e PC",
+            "price": "R$ 1691,10",
+            "url": "https://www.amazon.com.br/Volante-Logitech-Joysticks-Controles-Computador/dp/B017RBNOI4/ref=sr_1_5?dib=eyJ2IjoiMSJ9.E1cl4-lgslOGgD4VB5ICM7i8S_Re5w1PMhJNeUFUXht5cbzOBKb3K5iUzlaWhckyOUUXrMl7NyGyHfe1l2Z4oUc5CvHHgrurulCXh84P-L41uzdPiVH6H5XD_lHv15fGI1ndC78F4qMYPJuHmrEFN0jxXQ7FZ8bZxgb_uX84aeWHV5la7sw3Ku_5Lo0EZkzAfYQQDUTzHkSYtLS0G80sCYwUr6M241U5iFpTTXUfZmOJc5favAHKsEtLFjs789MjZ3TfZiLoH-ak4rH0S2rurXyXnA3SRwuHCSiCWgHP8sc.pK1FGdm-ELA5R4pBiIuWDP_LDpkOXqXUqCd1X7gCZ3Q&dib_tag=se&keywords=Volante+Logitech+G29+Driving+Force&qid=1776903541&sr=8-5&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
+            "image": "https://m.media-amazon.com/images/I/61j1ZCgzQRL._AC_UL320_.jpg",
+            "timestamp": "2026-04-22T21:19:04.672057"
+        }
+    ]
+}

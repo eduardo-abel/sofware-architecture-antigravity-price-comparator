@@ -141,4 +141,27 @@ function renderChart(stats, canvasId) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', initDashboard);
+document.addEventListener('DOMContentLoaded', () => {
+    initDashboard();
+
+    // Filtro de pesquisa de produtos dinâmico
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                const titleElement = card.querySelector('.variant-title');
+                if (titleElement) {
+                    const titleText = titleElement.textContent.toLowerCase();
+                    if (titleText.includes(searchTerm)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+    }
+});

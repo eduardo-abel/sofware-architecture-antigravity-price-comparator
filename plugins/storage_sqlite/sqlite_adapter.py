@@ -58,15 +58,18 @@ class SQLiteStorageAdapter(OfferStoragePort):
                 variant_name TEXT NOT NULL,
                 price REAL NOT NULL,
                 title TEXT,
-                url TEXT
+                url TEXT,
+                image_url TEXT,
+                monitor_hash TEXT
             )
         ''')
         
-        # Migration: Adiciona image_url se não existir nas extrações antigas
-        try:
-            cursor.execute('ALTER TABLE cheapest_offers_history ADD COLUMN image_url TEXT')
-        except sqlite3.OperationalError:
-            pass # A Coluna já existe
+        # Migration: Adiciona image_url e monitor_hash se não existir nas extrações antigas
+        for col in ["image_url", "monitor_hash"]:
+            try:
+                cursor.execute(f'ALTER TABLE cheapest_offers_history ADD COLUMN {col} TEXT')
+            except sqlite3.OperationalError:
+                pass # A Coluna já existe
             
         conn.commit()
         conn.close()
@@ -83,9 +86,10 @@ class SQLiteStorageAdapter(OfferStoragePort):
         
         for variant_name, dto in offers.items():
             cursor.execute('''
-                INSERT INTO cheapest_offers_history (timestamp, variant_name, price, title, url, image_url)
-                VALUES (?, ?, ?, ?, ?, ?)
-            ''', (now, variant_name, dto.price_value, dto.original_title, dto.url, getattr(dto, 'image_url', '')))
+                INSERT INTO cheapest_offers_history (timestamp, variant_name, price, title, url, image_url, monitor_hash)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            ''', (now, variant_name, dto.price_value, dto.original_title, dto.url, getattr(dto, 'image_url', ''), getattr(dto, 'monitor_hash', '')))
             
         conn.commit()
         conn.close()
+

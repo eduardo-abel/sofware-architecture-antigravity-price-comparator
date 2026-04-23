@@ -5,8 +5,9 @@ class Product:
     title: str
     url: str
     price_text: str
-    category: str  # Extraído grosseiramente, a lógica de categoria pode ser processada antes ou aqui
+    category: str
     image_url: str = ""
+    monitor_hash: str = ""
 
 @dataclass
 class PriceVariant:
@@ -15,3 +16,5 @@ class PriceVariant:
     original_title: str
     url: str
     image_url: str = ""
+    monitor_hash: str = ""
+

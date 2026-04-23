@@ -1,44 +1,47 @@
-# 🎮 PlayStation Price Comparator API
+# 🕹️ Antigravity Price Comparator
 
-**Antigravity Price Tracker** é um sistema projetado com **Arquitetura Hexagonal (Ports & Adapters)** sob os princípios do **CQRS**. Ele capta, normaliza e orquestra histórico de preços para Consoles e Hardware Gamers listados no *amazon_classified.json*, rastreando ativamente a inflação de ofertas.
-
----
-
-## 🛠 Topologia de Diretórios (Plugin Architecture)
-
-Esta engine possui um desacoplamento estrito entre "Negócios" e "Infraestrutura":
-
-* `core/`: Motor central impermeável. Possui os *Use Cases* e Serviços e dita as regras da operação de preços sem entender de Banco de Dados.
-* `plugins/`: Engrenagens conectáveis físicas (Arquitetura de Plugins).
-    * `scrapper_amazon/`: Módulo de ponte para captura do JSON/Crawler.
-    * `storage_sqlite/`: Módulo do BD purista com tabela Histórica isolada temporalmente.
-* `presentation/`: FrontEnd de linha de comando para consumir Visualmente o histórico CQRS.
+Um rastreador e comparador de preços inteligente para consolas, jogos e acessórios, construído com **Arquitetura Hexagonal** e **CQRS**. O sistema utiliza **Playwright** para capturar ofertas dinâmicas da Amazon com base em uma lista customizada de monitoramento.
 
 ---
 
-## 🚀 Como Executar Localmente
+## 🚀 Como Rodar o Projeto
 
-Você precisará apenas de **Python 3** configurado em sua máquina. O sistema não necessita de nenhuma biblioteca externa ou configurações pesadas virtuais (`pip install`). 
+### 1. Requisitos e Ambiente
+- **Python 3.x** instalado.
+- Ambiente virtual configurado:
+  ```powershell
+  python -m venv venv
+  .\venv\Scripts\activate
+  pip install playwright pandas
+  playwright install chromium
+  ```
 
-Na raiz do repositório, estão disponíveis 2 comandos absolutos para você simular as rotinas diárias do Robô:
+### 2. Fluxo de Execução (Novo Pipeline Playwright)
 
-### Passo 1: Executar o Scraper de Atualização Diária (A Central)
+O sistema agora permite monitorar produtos específicos via CSV:
 
-Para buscar os lotes base atualizados, parsear os dados contra a lógica forte de Domain Services e depositar o instantâneo (*snapshot*) atual dessas mercadorias no banco de dados SQLite, rodamos a Interface Primária:
+1. **Configuração da Lista:** Edite o arquivo `products_to_monitor.csv` com os produtos exatos que deseja rastrear.
+   
+2. **Captura Inteligente (Playwright):** O scraper percorre o CSV, busca na Amazon e identifica automaticamente a oferta mais barata para cada item, gerando um hash único de referência.
+   ```bash
+   python scraper_playwright.py
+   ```
 
-```bash
-python3 main.py
-```
-> 💡 *Dica:* Rode este comando ao menos 1x ao dia. Quando for disparado, o sistema mapeará tudo garantindo que **não sobrepõe** a captura de ontem, montando automaticamente a sua Tabela Temporal (Histórico).
+3. **Geração de Histórico:** Salva os resultados no banco SQLite para análise temporal.
+   ```bash
+   python main.py
+   ```
+
+### 3. Visualização
+
+*   **Dashboard Web (Recomendado):** `python presentation/web_dashboard/app.py` -> `http://localhost:8080`
+*   **Dashboard CLI:** `python presentation/cli_dashboard.py`
 
 ---
 
-### Passo 2: Executar o Terminal de Analytics
+## 📂 Estrutura de Dados
+- `products_to_monitor.csv`: Lista de entrada (ID, Busca, Categoria, Preço Mínimo).
+- `amazon_products_playwright.json`: Resultado da captura dinâmica.
+- `amazon_offers_history.db`: Banco de dados temporal (SQLite).
+- `monitor_hash`: Identificador único no JSON que linka o produto capturado ao item do seu CSV.
 
-Para visualizar o painel do consumidor e avaliar se é uma boa hora para comprar as mercadorias com o preço em queda, utilizamos o Módulo Gráfico (*CQRS / Presentation Layer*):
-
-```bash
-python3 presentation/cli_dashboard.py
-```
-> 💡 *Dica:* A tela do ambiente preencherá gráficos **`Sparkline` ASCII**, Tendências (Alta/Queda), indicando visualmente qual foi os limites máximos/mínimos para peças exatas de consles, baseando-se por tudo aquilo que foi rodado internamente pelo Motor `main.py`!
-# sofware-architecture-antigravity-price-comparator

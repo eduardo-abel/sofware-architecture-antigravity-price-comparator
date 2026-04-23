@@ -10,8 +10,9 @@ from core.application.use_cases import FindCheapestVariantsUseCase
 from plugins.storage_sqlite.sqlite_adapter import SQLiteStorageAdapter
 
 def main():
-    # Caminho do JSON base
-    json_path = "amazon_classified.json"
+    # Caminho do JSON gerado pelo novo scraper Playwright
+    json_path = "amazon_products_playwright.json"
+
     
     if not os.path.exists(json_path):
         print(f"Erro: O adapter está apontando para um banco que não existe: {json_path}")

@@ -10,20 +10,51 @@ class ProductDomainService:
         t = title.lower()
         
         if category == "Consoles":
-            if "pro" in t:
-                return "Console PlayStation 5 PRO"
+            # Sanity check: se na categoria Console cair algo com 'jogo', 'midia' ou 'edition' sem ter 'console'
+            # vamos forçar a ser jogo genérico se o preço for baixo no futuro, mas aqui apenas refinamos o nome
+            if ("edition" in t or "standard" in t or "jogo" in t) and ("console" not in t and "bundle" not in t and "pack" not in t):
+                 return "Jogo Genérico (Possível erro de categoria)"
+
+            suffix = ""
+            if any(x in t for x in ["spider-man", "god of war", "astro bot", "gran turismo", "fc 24", "fifa", "battlefield", "halo", "forza"]):
+                suffix = " + Jogo/Bundle"
+
+            if "switch" in t or "nintendo" in t:
+                if "oled" in t:
+                    return "Console Nintendo Switch OLED" + suffix
+                elif "lite" in t:
+                    return "Console Nintendo Switch Lite" + suffix
+                else:
+                    return "Console Nintendo Switch Standard" + suffix
+            elif "xbox" in t:
+                if "one" in t:
+                    if "s" in t:
+                        return "Console Xbox One S" + suffix
+                    elif "x" in t:
+                        return "Console Xbox One X" + suffix
+                    return "Console Xbox One Standard" + suffix
+                elif "series" in t:
+                    if " s" in t:
+                        return "Console Xbox Series S" + suffix
+                    return "Console Xbox Series X" + suffix
+                return "Console Xbox Genérico" + suffix
+            elif "pro" in t:
+                return "Console PlayStation 5 PRO" + suffix
             elif "slim" in t:
                 if "digital" in t or "edição digital" in t or "disk" not in t and "disco" not in t:
-                    if "digital" in t or "edição digital" in t:
-                        return "Console PlayStation 5 Slim Digital"
-                return "Console PlayStation 5 Slim Standard (Disco)"
+                    return "Console PlayStation 5 Slim Digital" + suffix
+                return "Console PlayStation 5 Slim Standard (Disco)" + suffix
             elif "digital" in t or "edição digital" in t:
-                return "Console PlayStation 5 Base Digital"
+                return "Console PlayStation 5 Base Digital" + suffix
             else:
-                return "Console PlayStation 5 Standard (Base/Fat)"
+                return "Console PlayStation 5 Standard (Base/Fat)" + suffix
                 
         elif category == "Controles":
-            if "edge" in t or "pro " in t:
+            if "joy-con" in t or "joycon" in t:
+                return "Controle Nintendo Joy-Con"
+            elif "pro controller" in t or "switch pro" in t or ("pro" in t and ("nintendo" in t or "switch" in t)):
+                return "Controle Nintendo Switch Pro"
+            elif "edge" in t or ("pro " in t and "playstation" in t):
                 return "Controle DualSense Edge (Pro)"
             elif "hori" in t or "luta" in t:
                 return "Controle Fightpad Hori ALPHA"
@@ -70,7 +101,13 @@ class ProductDomainService:
                 
         elif category == "Jogos":
             # Jogos não têm variação de hardware, mas podemos agrupar jogos iguais
-            if "spider-man" in t:
+            if "mario" in t:
+                return "Jogo: Franquia Super Mario"
+            elif "zelda" in t:
+                return "Jogo: The Legend of Zelda"
+            elif "pokémon" in t or "pokemon" in t:
+                return "Jogo: Franquia Pokémon"
+            elif "spider-man" in t:
                 return "Jogo: Marvel's Spider-Man 2"
             elif "gran turismo" in t:
                 return "Jogo: Gran Turismo 7"
@@ -84,6 +121,10 @@ class ProductDomainService:
                 return "Jogo: Mega Man Collection"
             elif "ea sports" in t or "fc" in t:
                 return "Jogo: EA Sports FC"
+            elif "halo" in t:
+                return "Jogo: Halo"
+            elif "forza" in t:
+                return "Jogo: Forza Horizon/Motorsport"
             else:
                 return "Jogo Genérico"
                 

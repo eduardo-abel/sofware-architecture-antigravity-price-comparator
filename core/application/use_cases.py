@@ -38,8 +38,10 @@ class FindCheapestVariantsUseCase:
                 price_value=price,
                 original_title=p.title,
                 url=p.url,
-                image_url=p.image_url
+                image_url=p.image_url,
+                monitor_hash=p.monitor_hash
             )
+
             
             if variant_name not in groups:
                 groups[variant_name] = []

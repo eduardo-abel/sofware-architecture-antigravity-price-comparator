@@ -1,0 +1,15 @@
+id,search_query,expected_category,min_price_threshold
+ps5_slim_disc,Console PlayStation 5 Slim,Consoles,2500
+ps5_pro,Console PlayStation 5 Pro,Consoles,5000
+xbox_series_s,Microsoft Xbox Series S,Consoles,1800
+nintendo_switch_oled,Nintendo Switch OLED,Consoles,1800
+dualsense_edge,Controle DualSense Edge PS5,Controles,800
+joycon_pair,Controle Joy-Con Nintendo Switch,Controles,250
+zelda_breath_wild,The Legend of Zelda: Breath of the Wild - Nintendo Switch,Jogos,200
+mario_kart_8,Mario Kart 8 Deluxe - Nintendo Switch,Jogos,200
+
+elden_ring_ps5,Elden Ring PlayStation 5,Jogos,150
+gta_vi_ps5,Grand Theft Auto VI PlayStation 5,Jogos,300
+kinect_xbox_one,Sensor Kinect Xbox One,Acessórios & Hardware,300
+headset_pulse_3d,Sony Headset Pulse 3D Wireless,Headsets & Áudio,300
+volante_g29,Volante Logitech G29 Driving Force,Volantes,1200

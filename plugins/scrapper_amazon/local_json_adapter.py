@@ -30,8 +30,10 @@ class LocalJsonProductAdapter(ProductRepositoryPort):
                     url=desc.get('url', ''),
                     price_text=desc.get('price', ''),
                     category=category_name,
-                    image_url=desc.get('image', '')
+                    image_url=desc.get('image', ''),
+                    monitor_hash=desc.get('monitor_hash', '')
                 )
+
                 products.append(p)
                 
         return products
